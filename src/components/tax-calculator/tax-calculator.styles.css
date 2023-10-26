@@ -1,0 +1,46 @@
+.tax-calculator-container {
+  width: 910px;
+  height: 879px;
+  padding: 35px 73px 58px 79px;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.tax-calculator-body {
+  width: 729px;
+  height: 786px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tax-calculator-body header {
+  width: 638px;
+  height: 42px;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  color: #0f1629;
+}
+
+.tax-calculator-body-inputs {
+  width: 713px;
+  height: 688px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hr-divider {
+  width: 713px;
+  height: 1px;
+  background-color: #c9cfdd60;
+}
+
+/* .tax-calc-container-height-fix {
+  height: 755px;
+} */

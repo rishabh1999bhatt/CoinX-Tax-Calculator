@@ -1,0 +1,61 @@
+.select-financial-year-countries {
+  width: 713px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-year,
+.select-country {
+  width: 335px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#financialYear {
+  width: 228px;
+  height: 48px;
+  padding: 13px 11px 13px 12px;
+  border-radius: 8px;
+  background-color: #eff2f5;
+  border: none;
+  outline: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #0f1629;
+}
+
+#country {
+  width: 273px;
+  height: 48px;
+  padding: 13px 11px 13px 12px;
+  border-radius: 8px;
+  background-color: #eff2f5;
+  border: none;
+  outline: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #0f1629;
+}
+
+#financialYear:focus,
+#country:focus {
+  outline: 1px solid #0052fe;
+}
+
+.select-year label,
+.select-country label {
+  height: 24px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0f1629;
+}

@@ -1,0 +1,48 @@
+.tax-to-pay-container {
+  width: 713px;
+  height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tax-t-p-left,
+.tax-t-p-right {
+  width: 336.5px;
+  height: 97px;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tax-t-p-left {
+  background-color: #ebf9f4;
+}
+.tax-t-p-right {
+  background-color: #ebf2ff;
+}
+.tax-t-p-left-top,
+.tax-t-p-right-top {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #0f1629;
+}
+
+.tax-t-p-left-bottom,
+.tax-t-p-right-bottom {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.tax-t-p-left-bottom {
+  color: #0fba83;
+}
+.tax-t-p-right-bottom {
+  color: #0141cf;
+}

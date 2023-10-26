@@ -1,0 +1,61 @@
+.navbar-container {
+  width: 100%;
+  height: 80px;
+  padding: 0.5px 56px 0.5px 60px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 12px 0px #1026490f;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links-container {
+  width: 909px;
+  height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  width: 728px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-in {
+  width: 112px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-in button {
+  width: 112px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+  background-color: #ffffff;
+  border: 1px solid #0052fe;
+  color: #0052fe;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  cursor: pointer;
+}
+.nav-links span {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #0f1629;
+  cursor: pointer;
+}

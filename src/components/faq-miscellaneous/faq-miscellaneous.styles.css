@@ -1,0 +1,163 @@
+.faq-question-container {
+  width: 830px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-question {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #0b1426;
+}
+
+.faq-answer {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #3e424a;
+}
+
+.question-hr-line {
+  height: 1px;
+  width: 830px;
+  background-color: #c9cfdd60;
+}
+
+.bold-1 {
+  font-weight: 600;
+}
+
+.still-have-doubts {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #161b3d;
+  margin-top: 16px;
+}
+
+.blue-1 {
+  color: #0052fe;
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tax-rates {
+  width: 606px;
+  height: 372px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+.tax-rates p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #0b1426;
+}
+
+.tax-rates-container {
+  width: 606px;
+  height: 301px;
+  display: flex;
+}
+
+.tax-rate-left {
+  width: 214px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tex-rate-right {
+  width: 392px;
+}
+.income-range-heading,
+.tax-rates-heading {
+  width: 214px;
+  height: 50.17px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #0b1426;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #768396;
+}
+.tax-rates-heading {
+  width: 392px;
+}
+.income-range-box,
+.tax-rate-box {
+  width: 214px;
+  height: 50.17px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #3e424a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #768396;
+}
+.tax-rate-box {
+  width: 392px;
+}
+.capital-gains-tax {
+  width: 830px;
+  height: 22px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #0b1426;
+}
+
+.capital-gains-tax-content {
+  width: 830px;
+  height: 52px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #3e424a;
+}
+.capital-gains-formula {
+  width: 830px;
+  height: 38px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #3e424a;
+}
+.final-note {
+  width: 830px;
+  height: 287px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.final-note-1 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #0b1426;
+}
+.final-note-2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #3e424a;
+}

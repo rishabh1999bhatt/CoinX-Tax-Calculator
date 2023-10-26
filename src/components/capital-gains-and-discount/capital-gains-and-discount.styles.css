@@ -1,0 +1,53 @@
+.capital-gains-and-discount-container {
+  width: 711px;
+  height: 86px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cap-gains-and-discount-first-row-left,
+.cap-gains-and-discount-first-row-right {
+  width: 335.5px;
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cap-gains-and-discount-label {
+  height: 24px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0f1629;
+}
+.cap-gains-and-discount-first-row-left label {
+  width: 219px;
+}
+
+.cap-gains-and-discount-first-row-right label {
+  width: 182px;
+}
+
+.cap-gains-and-discount-input {
+  width: 335.5px;
+  height: 56px;
+  padding: 17px 16px 17px 16px;
+  border-radius: 8px;
+  background-color: #eff2f5;
+  border: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: rgba(15, 22, 41, 1);
+}
+.cap-gains-and-discount-input:focus {
+  outline: 1px solid #0052fe;
+}
+.hide-gains-and-discount-container {
+  visibility: hidden;
+}
