@@ -6,6 +6,7 @@ import { incomeRange } from "../../utils/incomes.utils";
 import { taxRates } from "../../utils/tax-rates.utils";
 
 import { ReactComponent as Checked } from "../../assets/checked.svg";
+import { ReactComponent as SelectDown } from "../../assets/select-down.svg";
 
 import {
   selectInvestmentType,
@@ -134,8 +135,9 @@ const InputInvestmentLogistics = () => {
       <div className="inv-log-third-row">
         <div className="inv-log-third-row-left">
           <label className="inv-log-label">Select Your Annual Income</label>
+          <SelectDown className="select-down-3" />
           <select
-            className="inv-log-input"
+            className="inv-log-input select-tag"
             id="annualIncome"
             onChange={handleChangeInvestmentLogistics}
             value={annualIncome}

@@ -30,16 +30,30 @@ export const selectReturns = createSelector(
   }
 );
 
-export const selectNetCapitalGainsAndTaxAmount = createSelector(
+export const selectNetCapitalGainsAndTaxAmountLongTerm = createSelector(
   [selectReturns, selectInvestmentLogistics],
   (returns, investmentLogistics) => {
     const { capitalGains, longTermDiscount } = returns;
     const { annualIncome } = investmentLogistics;
     return {
-      netCapitalGains: `${capitalGains - longTermDiscount}`,
-      netTaxAmount: `${
+      netCapitalGainsLong: `${capitalGains - longTermDiscount}`,
+      netTaxAmountLong: `${
         ((capitalGains - longTermDiscount) * taxRatesInPercent[annualIncome]) /
         100
+      }`,
+    };
+  }
+);
+
+export const selectNetCapitalGainsAndTaxAmountShortTerm = createSelector(
+  [selectReturns, selectInvestmentLogistics],
+  (returns, investmentLogistics) => {
+    const { capitalGains, longTermDiscount } = returns;
+    const { annualIncome } = investmentLogistics;
+    return {
+      netCapitalGainsShort: `${capitalGains}`,
+      netTaxAmountShort: `${
+        (capitalGains * taxRatesInPercent[annualIncome]) / 100
       }`,
     };
   }

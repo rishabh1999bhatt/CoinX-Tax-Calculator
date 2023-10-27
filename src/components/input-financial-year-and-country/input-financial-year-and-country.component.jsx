@@ -6,6 +6,8 @@ import { selectFinancialYearAndCountry } from "../../store/user-inputs/user-inpu
 import { countries } from "../../utils/countries.utils";
 import { financialYears } from "../../utils/financial-year.utils";
 
+import { ReactComponent as SelectDown } from "../../assets/select-down.svg";
+
 import "./input-financial-year-and-country.styles.css";
 
 const InputFYAndCountry = () => {
@@ -22,8 +24,10 @@ const InputFYAndCountry = () => {
     <div className="select-financial-year-countries">
       <div className="select-year">
         <label>Financial Year</label>
+        <SelectDown className="select-down" />
         <select
           id="financialYear"
+          className="select-tag"
           onChange={handleSelectFY_Country}
           value={financialYearAndCountry.financialYear}
         >
@@ -38,8 +42,10 @@ const InputFYAndCountry = () => {
       </div>
       <div className="select-country">
         <label>Country</label>
+        <SelectDown className="select-down-2" />
         <select
           id="country"
+          className="select-tag"
           onChange={handleSelectFY_Country}
           value={financialYearAndCountry.country}
         >

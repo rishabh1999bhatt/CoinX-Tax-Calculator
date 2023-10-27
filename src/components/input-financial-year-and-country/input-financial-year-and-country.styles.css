@@ -59,3 +59,18 @@
   line-height: 24px;
   color: #0f1629;
 }
+.select-tag {
+  position: relative;
+}
+.select-down {
+  position: absolute;
+  z-index: 9;
+  top: 40.5%;
+  left: 30.5%;
+}
+
+.select-down-2 {
+  position: absolute;
+  z-index: 9;
+  left: 55.4%;
+}
