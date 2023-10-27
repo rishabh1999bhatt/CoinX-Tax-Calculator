@@ -24,10 +24,10 @@ const InputFYAndCountry = () => {
     <div className="select-financial-year-countries">
       <div className="select-year">
         <label>Financial Year</label>
-        <SelectDown className="select-down" />
+        <SelectDown className="select-down-1" />
         <select
           id="financialYear"
-          className="select-tag"
+          className="select-tag-1"
           onChange={handleSelectFY_Country}
           value={financialYearAndCountry.financialYear}
         >
@@ -45,7 +45,7 @@ const InputFYAndCountry = () => {
         <SelectDown className="select-down-2" />
         <select
           id="country"
-          className="select-tag"
+          className="select-tag-2"
           onChange={handleSelectFY_Country}
           value={financialYearAndCountry.country}
         >

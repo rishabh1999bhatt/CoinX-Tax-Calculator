@@ -228,7 +228,7 @@ select {
   text-overflow: "";
 }
 
-.select-tag {
+.select-tag-3 {
   position: relative;
 }
 
@@ -236,5 +236,5 @@ select {
   position: absolute;
   z-index: 9;
   left: 30.6%;
-  top: 102.4%;
+  top: 109.6%;
 }

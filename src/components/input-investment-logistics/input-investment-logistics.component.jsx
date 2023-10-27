@@ -137,7 +137,7 @@ const InputInvestmentLogistics = () => {
           <label className="inv-log-label">Select Your Annual Income</label>
           <SelectDown className="select-down-3" />
           <select
-            className="inv-log-input select-tag"
+            className="inv-log-input select-tag-3"
             id="annualIncome"
             onChange={handleChangeInvestmentLogistics}
             value={annualIncome}
