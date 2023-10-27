@@ -61,9 +61,11 @@
 }
 .select-tag-1 {
   position: relative;
+  cursor: pointer;
 }
 .select-tag-2 {
   position: relative;
+  cursor: pointer;
 }
 .select-down-1 {
   position: absolute;
