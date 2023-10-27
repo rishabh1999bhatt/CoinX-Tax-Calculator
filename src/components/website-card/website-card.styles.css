@@ -67,6 +67,9 @@
   color: #0f1629;
   cursor: pointer;
 }
+.website-card-container button:hover {
+  background-color: #ffffffe2;
+}
 .website-card-container button div {
   display: flex;
   align-items: center;
