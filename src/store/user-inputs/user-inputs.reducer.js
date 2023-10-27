@@ -8,7 +8,7 @@ export const USER_INPUTS_INITIAL_STATE = {
     expanses: "",
     annualIncome: "",
   },
-  investmentType: "Long Term",
+  investmentType: "",
 };
 
 export const userInputsReducer = (
