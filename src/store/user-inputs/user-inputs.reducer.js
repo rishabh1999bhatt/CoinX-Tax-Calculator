@@ -6,7 +6,7 @@ export const USER_INPUTS_INITIAL_STATE = {
     purchasePrice: "",
     sellPrice: "",
     expanses: "",
-    annualIncome: "$45,001 - $120,000",
+    annualIncome: "",
   },
   investmentType: "Long Term",
 };
