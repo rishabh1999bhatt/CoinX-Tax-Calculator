@@ -19,7 +19,7 @@ const CapitalGainsAndDiscount = () => {
   return (
     <div
       className={`capital-gains-and-discount-container ${
-        investmentType === "Short Term"
+        investmentType === "Short Term" || investmentType === ""
           ? "hide-gains-and-discount-container"
           : ""
       }`}
