@@ -1,7 +1,7 @@
 import { USER_ACTION_TYPES } from "./user-inputs.types";
 
 export const USER_INPUTS_INITIAL_STATE = {
-  financialYearAndCountry: { financialYear: "", country: "" },
+  financialYearAndCountry: { financialYear: "", country: "Australia" },
   investmentLogistics: {
     purchasePrice: "",
     sellPrice: "",
