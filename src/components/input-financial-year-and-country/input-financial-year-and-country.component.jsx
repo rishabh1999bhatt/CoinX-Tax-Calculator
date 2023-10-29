@@ -5,6 +5,7 @@ import { selectFinancialYearAndCountry } from "../../store/user-inputs/user-inpu
 
 import { countries } from "../../utils/countries.utils";
 import { financialYears } from "../../utils/financial-year.utils";
+import { countryCurrency } from "../../utils/country-currency";
 
 import { ReactComponent as SelectDown } from "../../assets/select-down.svg";
 

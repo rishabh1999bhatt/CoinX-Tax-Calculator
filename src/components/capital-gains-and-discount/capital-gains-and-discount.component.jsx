@@ -5,11 +5,17 @@ import {
   selectInvestmentType,
 } from "../../store/user-inputs/user-inputs.selector";
 
+import { selectFinancialYearAndCountry } from "../../store/user-inputs/user-inputs.selector";
+
+import { countryCurrency } from "../../utils/country-currency";
+
 import "./capital-gains-and-discount.styles.css";
 
 const CapitalGainsAndDiscount = () => {
   const { capitalGains, longTermDiscount } = useSelector(selectReturns);
   const investmentType = useSelector(selectInvestmentType);
+
+  const { country } = useSelector(selectFinancialYearAndCountry);
   return (
     <div
       className={`capital-gains-and-discount-container ${
@@ -23,7 +29,9 @@ const CapitalGainsAndDiscount = () => {
           Capital gains amount
         </label>
         <div className="cap-gains-and-discount-input">
-          $ {capitalGains >= 0 ? capitalGains : 0}
+          {`${countryCurrency[country]} ${
+            capitalGains >= 0 ? capitalGains : 0
+          }`}
         </div>
       </div>
       <div className="cap-gains-and-discount-first-row-right">
@@ -31,7 +39,9 @@ const CapitalGainsAndDiscount = () => {
           Discount for long term gains
         </label>
         <div className="cap-gains-and-discount-input">
-          $ {longTermDiscount >= 0 ? longTermDiscount : 0}
+          {`${countryCurrency[country]} ${
+            longTermDiscount >= 0 ? longTermDiscount : 0
+          }`}
         </div>
       </div>
     </div>

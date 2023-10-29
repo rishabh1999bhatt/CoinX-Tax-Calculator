@@ -1,9 +1,13 @@
-import { useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 
 import { incomeRange } from "../../utils/incomes.utils";
 import { taxRates } from "../../utils/tax-rates.utils";
+
+import { selectFinancialYearAndCountry } from "../../store/user-inputs/user-inputs.selector";
+
+import { countryCurrency } from "../../utils/country-currency";
 
 import { ReactComponent as Checked } from "../../assets/checked.svg";
 import { ReactComponent as SelectDown } from "../../assets/select-down.svg";
@@ -20,14 +24,23 @@ import {
 import "./input-investment-logistics.styles.css";
 
 const InputInvestmentLogistics = () => {
+  const [customIncomeRange, setCustomIncomeRange] = useState(incomeRange);
   const inputRef = useRef();
   const dispatch = useDispatch();
   const investmentType = useSelector(selectInvestmentType);
   const investmentLogistics = useSelector(selectInvestmentLogistics);
+  const { country } = useSelector(selectFinancialYearAndCountry);
 
   useEffect(() => {
     inputRef.current.focus();
   }, []);
+  useEffect(() => {
+    const updatedCustomIncomeRange = incomeRange.map((income) => {
+      const newRange = income.range.replaceAll("$", countryCurrency[country]);
+      return { ...income, range: newRange };
+    });
+    setCustomIncomeRange(updatedCustomIncomeRange);
+  }, [country]);
 
   const handleChangeTerm = (event) => {
     const { className } = event.target;
@@ -56,7 +69,7 @@ const InputInvestmentLogistics = () => {
           <label className="inv-log-label">
             Enter purchase price of Crypto
           </label>
-          <span className="input-sign">$ </span>
+          <span className="input-sign">{countryCurrency[country]} </span>
           <input
             type="number"
             ref={inputRef}
@@ -68,7 +81,7 @@ const InputInvestmentLogistics = () => {
         </div>
         <div className="inv-log-first-row-right input-prefix-fix">
           <label className="inv-log-label">Enter sale price of Crypto</label>
-          <span className="input-sign">$ </span>
+          <span className="input-sign">{countryCurrency[country]} </span>
           <input
             type="number"
             className="inv-log-input input-padding-fix"
@@ -81,7 +94,7 @@ const InputInvestmentLogistics = () => {
       <div className="inv-log-second-row">
         <div className="inv-log-second-row-left input-prefix-fix">
           <label className="inv-log-label">Enter your Expenses</label>
-          <span className="input-sign">$ </span>
+          <span className="input-sign">{countryCurrency[country]} </span>
           <input
             type="number"
             className="inv-log-input input-padding-fix"
@@ -142,7 +155,7 @@ const InputInvestmentLogistics = () => {
             onChange={handleChangeInvestmentLogistics}
             value={annualIncome}
           >
-            {incomeRange.map(({ id, range }) => {
+            {customIncomeRange.map(({ id, range }) => {
               return (
                 <option key={id} value={`${range}`}>
                   {range}
